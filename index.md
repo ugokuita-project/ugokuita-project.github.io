@@ -1,6 +1,6 @@
 # 動く板Project
 
-<div><video controls src="demo.mp4" muted="false"></video></div>
+<div><video controls src="demo.mp4" muted="false" style="width: 100vw;"></video></div>
 
 ![](./slide/スライド1.jpeg)
 ![](./slide/スライド2.jpeg)
