@@ -34,4 +34,3 @@
 ![](./slide/スライド10.jpeg)
 ![](./slide/スライド11.jpeg)
 ![](./slide/スライド12.jpeg)
-![](./slide/スライド13.jpeg)
