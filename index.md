@@ -9,7 +9,7 @@
 <div><video controls src="demo.mp4" muted="false" style="width: 100%;"></video></div>
 
 ## SNS
-- https://x.com/ugokuita
+- [X (@ugokuita)](https://x.com/ugokuita)
 
 ## 外部展示
 - 調布祭 2023 工学研究部展示スペースにて
