@@ -16,8 +16,8 @@
 - NT東京 2024 動くいたProject
 
 ## 受賞歴
-- [U☆PoCアイデアコンテスト 2023 B-Storm賞](https://www.uec.ac.jp/research/alliance-activity/r-day/2023/contest_2023.html)
-- [U☆PoCアイデアコンテスト 2024 多摩信用金庫賞,G&N賞,B-STORM賞](https://www.uec.ac.jp/research/alliance-activity/r-day/2024/contest_2024.html)
+- [U☆PoCアイデアコンテスト 2023 B-Storm賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
+- [U☆PoCアイデアコンテスト 2024 多摩信用金庫賞,G&N賞,B-STORM賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
 - [第3回マルツエレックアイデアコンテスト 最優秀賞](https://www.marutsu.co.jp/sv/ideacontest_announce/3rd/)
 
 ## スライド
