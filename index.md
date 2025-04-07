@@ -6,7 +6,8 @@
 
 ## イメージ映像
 
-<div><video controls src="demo.mp4" muted="false" style="width: 100%;"></video></div>
+<!-- <div><video controls src="demo.mp4" muted="false" style="width: 100%;"></video></div> -->
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm44853893/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm44853893">デモ動画</a></noscript>
 
 ## SNS
 - [X (@ugokuita)](https://x.com/ugokuita)
