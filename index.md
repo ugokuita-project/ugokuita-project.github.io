@@ -1,3 +1,14 @@
+---
+layout: single
+title: "動く板Project"
+excerpt: "特定の用途に縛られず、様々なシステムやハードウェアと容易に連携・拡張が可能なIoTスマートデバイス「動く板NEO」の開発プロジェクト"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: ./img/header.jpg
+classes: wide
+---
+
 ## 概要
 
 近年、AGV（Automated Guided Vehicle）と呼ばれる自律走行型の荷物運搬ロボットが倉庫など幅広い分野で活用されています。しかし、既存のAGVは倉庫での運搬、飲食物のデリバリー、工場の建物間運搬など、それぞれの用途に特化して提供されています。ハードウェアの基本的な機能は共通しているにもかかわらず、他の用途への転用が難しい状況です。
@@ -13,19 +24,19 @@
 - [X (@ugokuita)](https://x.com/ugokuita)
 
 ## 外部展示
-- 調布祭 2023 工学研究部展示スペースにて
-- NT東京 2024 動くいたProject
-- GUGEN 2024
+- 調布祭2023工学研究部展示スペースにて
+- NT東京2024動くいたProject
+- GUGEN2024
 
 ## 受賞歴
-- [U☆PoCアイデアコンテスト 2023 B-Storm賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
-- [U☆PoCアイデアコンテスト 2024 多摩信用金庫賞,G&N賞,B-STORM賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
-- [第3回マルツエレックアイデアコンテスト 最優秀賞](https://www.marutsu.co.jp/sv/ideacontest_announce/3rd/)
-- [2/8開催 技育博 企業賞(株式会社ディー・エヌ・エー)](https://x.com/geek_pjt/status/1888176218295636436)
-- [2025年 国際イノベーションコンテスト 特別賞(技術部門)]](http://www.mu-sic.tohoku.ac.jp/ican/ican2025/summary.html)
+- [U☆PoCアイデアコンテスト2023 B-Storm賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
+- [U☆PoCアイデアコンテスト2024 多摩信用金庫賞,G&N賞,B-STORM賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
+- [第3回マルツエレックアイデアコンテスト最優秀賞](https://www.marutsu.co.jp/sv/ideacontest_announce/3rd/)
+- [2/8開催技育博企業賞(株式会社ディー・エヌ・エー)](https://x.com/geek_pjt/status/1888176218295636436)
+- [2025年国際イノベーションコンテスト特別賞(技術部門)]](http://www.mu-sic.tohoku.ac.jp/ican/ican2025/summary.html)
 
 ## 支援
-- MISUMI 学生ものづくり支援 2024
+- MISUMI学生ものづくり支援2024
 - JLCPCB
 
 ## スライド
