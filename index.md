@@ -33,7 +33,7 @@ classes: wide
 - [U☆PoCアイデアコンテスト2024 多摩信用金庫賞,G&N賞,B-STORM賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
 - [第3回マルツエレックアイデアコンテスト最優秀賞](https://www.marutsu.co.jp/sv/ideacontest_announce/3rd/)
 - [2/8開催技育博企業賞(株式会社ディー・エヌ・エー)](https://x.com/geek_pjt/status/1888176218295636436)
-- [2025年国際イノベーションコンテスト特別賞(技術部門)]](http://www.mu-sic.tohoku.ac.jp/ican/ican2025/summary.html)
+- [2025年国際イノベーションコンテスト特別賞(技術部門)](http://www.mu-sic.tohoku.ac.jp/ican/ican2025/summary.html)
 
 ## 支援
 - MISUMI学生ものづくり支援2024
