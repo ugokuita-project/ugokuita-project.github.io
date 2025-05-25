@@ -53,3 +53,12 @@ classes: wide
 ![](./slide/スライド10.jpeg)
 ![](./slide/スライド11.jpeg)
 ![](./slide/スライド12.jpeg)
+
+## ゲーム
+動く板の操作をブラウザゲームで体験できます！
+
+<div class="notice--info">
+  <h3>動く板アドベンチャー</h3>
+  <p>動く板で世界を冒険するブラウザゲームです。動く板を操作しましょう。</p>
+  <a href="https://acavalkyrie.github.io/games/ugokuita-adventure/index.html" class="btn btn--info">ゲームをプレイ</a>
+</div>
