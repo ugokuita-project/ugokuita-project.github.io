@@ -26,7 +26,11 @@ classes: wide
 ## 外部展示
 - 調布祭2023工学研究部展示スペースにて
 - NT東京2024動くいたProject
+- 調布祭2024
 - GUGEN2024
+- NT東京2025動く板Project
+- MakerFairTokyo2025動く板Project
+- U☆PoCアイデアコンテスト2025
 
 ## 受賞歴
 - [U☆PoCアイデアコンテスト2023 B-Storm賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
@@ -34,15 +38,17 @@ classes: wide
 - [第3回マルツエレックアイデアコンテスト最優秀賞](https://www.marutsu.co.jp/sv/ideacontest_announce/3rd/)
 - [2/8開催技育博企業賞(株式会社ディー・エヌ・エー)](https://x.com/geek_pjt/status/1888176218295636436)
 - [2025年国際イノベーションコンテスト特別賞(技術部門)](http://www.mu-sic.tohoku.ac.jp/ican/ican2025/summary.html)
+- [MakerFairTokyo Young Maker Challange 2025 IIJ賞](https://makezine.jp/event/makerfaire/ymc2025/)
 
 ## 支援
 - MISUMI学生ものづくり支援2024
+- meviy for education2025
 - JLCPCB
 
 ## スライド
 - [U☆PoC2024発表スライド](./slide.pdf)
 
-![](./slide/スライド2.jpeg)
+<!-- ![](./slide/スライド2.jpeg)
 ![](./slide/スライド3.jpeg)
 ![](./slide/スライド4.jpeg)
 ![](./slide/スライド5.jpeg)
@@ -52,7 +58,7 @@ classes: wide
 ![](./slide/スライド9.jpeg)
 ![](./slide/スライド10.jpeg)
 ![](./slide/スライド11.jpeg)
-![](./slide/スライド12.jpeg)
+![](./slide/スライド12.jpeg) -->
 
 ## ゲーム
 動く板の操作をブラウザゲームで体験できます！
