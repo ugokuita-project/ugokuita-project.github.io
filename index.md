@@ -67,4 +67,4 @@ classes: wide
 
 動く板で世界を冒険するブラウザゲームです。動く板を操作しましょう。
 
-[ゲームをプレイ](https://acavalkyrie.github.io/games/ugokuita-adventure/index.html)
+[ゲームをプレイ](https://acavalkyrie.github.io/ugokuita-adventure-uec/web/)
