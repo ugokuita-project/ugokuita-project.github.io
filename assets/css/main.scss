@@ -1,0 +1,17 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// classes: wide のページは左サイドバー用の余白を使わず、本文を全幅・中央寄せにする
+.wide .page {
+  float: none;
+  width: 100%;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
