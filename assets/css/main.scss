@@ -17,8 +17,8 @@
 }
 
 // notice 内のリンク色がボタンにも当たって文字が読めなくなるのを防ぐ
-.notice .btn,
-.notice .btn:hover,
-.notice .btn:visited {
+[class*="notice"] .btn,
+[class*="notice"] .btn:hover,
+[class*="notice"] .btn:visited {
   color: #fff;
 }
