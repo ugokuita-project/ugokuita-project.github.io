@@ -31,6 +31,7 @@ classes: wide
 - NT東京2025動く板Project
 - MakerFairTokyo2025動く板Project
 - U☆PoCアイデアコンテスト2025
+- MakerFairTokyo2026動く板Project
 
 ## 受賞歴
 - [U☆PoCアイデアコンテスト2023 B-Storm賞](https://www.uec.ac.jp/research/venture/2023/contest_2.html)
@@ -44,6 +45,15 @@ classes: wide
 - MISUMI学生ものづくり支援2024
 - meviy for education2025
 - JLCPCB
+
+## 配布資料
+
+Maker Faire Tokyo 2026 のブースで配布・掲示している資料です。ご自由にダウンロードしてご覧ください。
+
+| 資料 | 内容 | ダウンロード |
+| --- | --- | --- |
+| ハンドアウト | 動く板NEOの概要・特徴をまとめた配布用チラシ | [handout.pdf](./docs/mft2026/handout.pdf) |
+| ポスター | ブースに掲示している展示ポスター | [poster.pdf](./docs/mft2026/poster.pdf) |
 
 ## スライド
 - [U☆PoC2024発表スライド](./slide.pdf)
