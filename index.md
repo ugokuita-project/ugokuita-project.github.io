@@ -11,9 +11,9 @@ classes: wide
 
 <div style="background: linear-gradient(135deg, #ff6b35, #ff9f1c); color: #fff; border-radius: 12px; padding: 1.2em 1.5em; margin: 0 0 2em 0; box-shadow: 0 4px 14px rgba(0,0,0,0.2);">
   <div style="font-size: 0.9em; letter-spacing: 0.15em; font-weight: bold; opacity: 0.9;">NOW EXHIBITING</div>
-  <div style="font-size: 1.6em; font-weight: bold; margin: 0.2em 0 0.4em 0;">🎉 Maker Faire Tokyo 2026 に出展中！</div>
+  <div style="font-size: 1.6em; font-weight: bold; margin: 0.2em 0 0.4em 0;">Maker Faire Tokyo 2026 に出展中！</div>
   <div style="margin-bottom: 0.8em;">動く板NEO と制御基板の標準規格「Power Stack 1.0」を展示しています。ブースにぜひお立ち寄りください！</div>
-  <a href="#mft2026" style="display: inline-block; background: #fff; color: #ff6b35; font-weight: bold; padding: 0.5em 1.2em; border-radius: 999px; text-decoration: none;">📄 MFTの資料はこちら！</a>
+  <a href="#mft2026" style="display: inline-block; background: #fff; color: #ff6b35; font-weight: bold; padding: 0.5em 1.2em; border-radius: 999px; text-decoration: none;">MFTの資料はこちら！</a>
 </div>
 
 ## 概要
@@ -59,8 +59,8 @@ Maker Faire Tokyo 2026 のブースで配布・掲示している資料です。
 
 | 資料 | 内容 | ダウンロード |
 | --- | --- | --- |
-| 📄 ハンドアウト | 動く板NEOのシステム構成・スペックと Power Stack 1.0 の仕様をまとめた配布用チラシ | [handout.pdf](./docs/mft2026/handout.pdf) |
-| 🖼️ ポスター | ブースに掲示している展示ポスター（動く板の拡張性・耐久性、Power Stack 1.0 の標準規格） | [poster.pdf](./docs/mft2026/poster.pdf) |
+| ハンドアウト | 動く板NEOのシステム構成・スペックと Power Stack 1.0 の仕様をまとめた配布用チラシ | [handout.pdf](./docs/mft2026/handout.pdf) |
+| ポスター | ブースに掲示している展示ポスター（動く板の拡張性・耐久性、Power Stack 1.0 の標準規格） | [poster.pdf](./docs/mft2026/poster.pdf) |
 
 ## スライド
 - [U☆PoC2024発表スライド](./slide.pdf)
