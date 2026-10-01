@@ -1,0 +1,2 @@
+{% comment %}Load the current build after the theme CSS so returning visitors receive the refreshed design immediately.{% endcomment %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
