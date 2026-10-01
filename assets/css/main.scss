@@ -1,24 +1,99 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter.
 ---
-
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Use the header's black, white and red across the theme as well as the homepage.
+$background-color: #fff;
+$text-color: #242424;
+$primary-color: #c51c24;
+$link-color: #b51b23;
+$link-color-hover: #86141a;
+$masthead-link-color: #191919;
+$masthead-link-color-hover: #b51b23;
+$footer-background-color: #151515;
+$muted-text-color: #616161;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
 
-// classes: wide のページは左サイドバー用の余白を使わず、本文を全幅・中央寄せにする
-.wide .page {
-  float: none;
-  width: 100%;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+.masthead { border-bottom: 0; }
+.masthead__inner-wrap { max-width: 1280px; padding: 1em 2em; }
+.site-title { letter-spacing: .04em; }
+.site-subtitle { color: #616161; font-weight: 400; font-size: .65em; }
+.brand-hero { background: #111; }
+.brand-hero img { display: block; width: 100%; max-width: 1600px; height: auto; margin: 0 auto; }
+
+.wide .page,
+.project-home .page { float: none; width: 100%; padding-right: 0; margin: 0 auto; }
+#main.project-home { max-width: 1200px; padding: 0 2em; }
+.project-home .page__content { font-size: .9em; line-height: 1.9; }
+.project-home .page__content > h2 { margin-top: 3em; padding: 0 0 .65em; border-bottom: 1px solid #dedede; }
+.project-home .page__content > h2::before { content: ""; display: inline-block; width: 4px; height: .85em; margin-right: .6em; background: #d91f27; }
+.project-home h2[id] { scroll-margin-top: 1.5em; }
+.eyebrow { display: block; font-size: .65rem; font-weight: 700; letter-spacing: .16em; color: #b51b23; }
+.event-notice { display: flex; align-items: center; gap: 2em; padding: 1.5em 0 1.5em 1.25em; margin: 0 0 3em; border-left: 4px solid #d91f27; border-bottom: 1px solid #dedede; }
+.event-notice > div { flex: 1; }
+.page__content .event-notice h2 { margin: .25em 0 .45em; padding: 0; border: 0; font-size: 1.15em; }
+.page__content .event-notice p { margin: 0; font-size: .85em; color: #535353; }
+.event-notice .btn { flex-shrink: 0; margin: 0; white-space: nowrap; }
+.btn { border-radius: 2px; padding: .85em 1.35em; }
+.btn--primary, .btn--primary:visited { background: #c51c24; color: #fff; }
+.btn--primary:hover { background: #94151b; color: #fff; }
+a:focus-visible, button:focus-visible { outline: 3px solid #b51b23; outline-offset: 4px; }
+.project-intro { margin: 3.5em 0 2em; }
+.page__content .project-intro h1 { margin: .45em 0 .65em; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.4; letter-spacing: .03em; }
+.project-intro > p:last-child { color: #535353; }
+.page__content table { display: table; width: 100%; font-size: .85em; }
+.page__content th { background: #f3f3f3; }
+.page__content th, .page__content td { padding: 1em; }
+.activity-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4em; margin: 1.75em 0; }
+.activity-grid figure { display: block; margin: 0; min-width: 0; }
+.activity-grid figure > a { display: block; background: #f1f1f1; }
+.activity-grid img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; margin: 0; }
+.activity-grid figcaption { margin: .8em 0 0; font-size: .8em; line-height: 1.65; }
+.activity-grid time { display: block; color: #666; font-size: .85em; letter-spacing: .06em; margin-bottom: .35em; }
+.activity-grid figcaption a { color: #242424; text-decoration: none; font-weight: 700; }
+.activity-grid figcaption a:hover { text-decoration: underline; text-decoration-color: #c51c24; }
+.page__content iframe { max-width: 100%; }
+.page__footer { color: #c9c9c9; margin-top: 4em; border-top: 3px solid #d91f27; }
+.page__footer footer { max-width: 1200px; }
+.page__footer a { color: #eee; }
+
+@media (max-width: 767px) {
+  .masthead__inner-wrap { padding: 1em; }
+  .site-subtitle { font-size: .6em; }
+  #main.project-home { padding: 0 1.2em; }
+  .event-notice { flex-direction: column; align-items: flex-start; gap: 1em; padding: 1.2em 0 1.2em 1em; margin-bottom: 2em; }
+  .event-notice .btn { font-size: .8em; }
+  .project-intro { margin-top: 2.5em; }
+  .desktop-break { display: none; }
+  .activity-grid { grid-template-columns: 1fr; gap: 2em; }
+  .activity-grid img { max-height: 340px; }
+  .page__content table { display: block; overflow-x: auto; }
+  .page__content th, .page__content td { padding: .7em; min-width: 6em; }
 }
 
-// notice 内のリンク色がボタンにも当たって文字が読めなくなるのを防ぐ
-[class*="notice"] .btn,
-[class*="notice"] .btn:hover,
-[class*="notice"] .btn:visited {
-  color: #fff;
+.intro-link { display: inline-block; margin-top: .5em; font-size: .85em; font-weight: 700; text-underline-offset: .3em; }
+.product-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2em; margin: 3em 0 4em; }
+.product-features > div { border-top: 2px solid #242424; padding-top: 1em; }
+.feature-number { font-size: .6rem; letter-spacing: .12em; font-weight: 700; color: #b51b23; }
+.page__content .product-features h2 { font-size: 1.4em; border: 0; margin: .65em 0; padding: 0; }
+.product-features p { color: #535353; font-size: .85em; }
+.power-stack { display: grid; grid-template-columns: 1fr 1.2fr; align-items: center; gap: 2em; background: #161616; color: #f5f5f5; padding: 2.5em; margin: 3em 0; }
+.power-stack .eyebrow { color: #ff777c; }
+.page__content .power-stack h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin: .4em 0; padding: 0; border: 0; }
+.power-stack h2 span { color: #ff777c; }
+.power-stack p { font-size: .8em; color: #ccc; }
+.power-stack .power-stack-lead { font-size: 1.2em; color: #fff; font-weight: 700; line-height: 1.6; }
+.power-stack img { display: block; width: 100%; }
+.power-stack .btn { font-size: .75em; }
+@media (max-width: 767px) {
+  .product-features { grid-template-columns: 1fr; gap: 1em; margin: 2em 0; }
+  .power-stack { grid-template-columns: 1fr; padding: 1.5em; gap: 1.5em; }
+}
+.product-video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #151515; margin: 1.5em 0 1em; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }
