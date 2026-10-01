@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
+<div class="launch-intro" aria-hidden="true" data-model="{{ '/assets/models/ugokuita-neo.glb' | relative_url }}">
+  <div class="launch-wordmark">UGOKUITA <span>NEO</span></div>
+</div>
 <div class="brand-hero">
   <img src="{{ '/img/ugokuita-neo-header.png' | relative_url }}" alt="動く板 UGOKUITA NEO — アルミフレームの実機" width="2172" height="724" fetchpriority="high">
+  <button class="intro-replay" type="button" hidden>もう一度走らせる <span aria-hidden="true">↻</span></button>
 </div>
+<script type="module" src="{{ '/assets/js/product-intro.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 <div id="main" role="main" class="project-home">
   <article class="page">
     <div class="page__inner-wrap">

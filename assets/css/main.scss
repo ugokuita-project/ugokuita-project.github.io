@@ -98,34 +98,15 @@ a:focus-visible, button:focus-visible { outline: 3px solid #b51b23; outline-offs
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
-// A single arrival motion: the product enters, brakes, and settles.
-// The effect stays inside the hero so it never blocks navigation or reading.
-.brand-hero { position: relative; overflow: hidden; }
-@media (prefers-reduced-motion: no-preference) {
-  .brand-hero img { animation: product-arrive 1.15s cubic-bezier(.16, 1, .3, 1) both; }
-  .brand-hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 35%;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, #ed2028 60%, #fff);
-    box-shadow: 0 0 18px #ed2028;
-    pointer-events: none;
-    animation: product-trail 1.25s ease-out both;
-  }
-}
-@keyframes product-arrive {
-  0% { transform: translateX(16%); opacity: 0; }
-  16% { opacity: 1; }
-  68% { transform: translateX(-.8%); }
-  84% { transform: translateX(.25%); }
-  100% { transform: translateX(0); opacity: 1; }
-}
-@keyframes product-trail {
-  0% { transform: translateX(-110%); opacity: 0; }
-  15% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { transform: translateX(390%); opacity: 0; }
-}
+// The canvas renders the project's actual GLB; reduced-motion visitors skip loading it.
+.brand-hero { position: relative; }
+.launch-intro { display: none; position: fixed; inset: 0; z-index: 10000; overflow: hidden; background: #0a0b0d; pointer-events: none; }
+.launch-intro.is-active { display: block; }
+.launch-intro.is-leaving { opacity: 0; transition: opacity .35s ease; }
+.launch-intro canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.launch-wordmark { position: absolute; z-index: 1; left: 8%; bottom: 9%; color: #f4f4f4; font-size: clamp(1.4rem, 5vw, 4rem); font-weight: 900; letter-spacing: .08em; }
+.launch-wordmark span { color: #ed2028; }
+.intro-replay { position: absolute; right: 1.25em; bottom: 1.25em; border: 1px solid #aaa; border-radius: 2px; background: #111e; color: #fff; padding: .7em 1em; font: inherit; font-size: .65rem; cursor: pointer; }
+.intro-replay[hidden] { display: none; }
+.intro-replay:hover { background: #b51b23; }
+@media (prefers-reduced-motion: reduce) { .launch-intro, .intro-replay { display: none !important; } }

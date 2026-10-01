@@ -48,3 +48,10 @@ defaults:
     values:
       layout: single
       author_profile: false 
+
+# Build tools are local only; GitHub Pages serves the committed JS and model.
+exclude:
+  - node_modules
+  - scripts
+  - package.json
+  - package-lock.json
