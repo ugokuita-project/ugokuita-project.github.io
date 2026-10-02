@@ -9,13 +9,23 @@ const motion = matchMedia('(prefers-reduced-motion: reduce)');
 if (overlay && !motion.matches) startIntro();
 
 async function startIntro() {
-  let renderer, frame, timer, done = false;
+  let renderer, frame, timer, done = false, skipped = false;
+  let previousFocus = document.activeElement;
   const controller = new AbortController();
   const hide = () => {
     cancelAnimationFrame(frame);
+    if (overlay.contains(document.activeElement)) previousFocus?.focus();
     overlay.classList.remove('is-active', 'is-running', 'is-leaving');
     overlay.dataset.state = 'finished';
   };
+  const skip = () => {
+    skipped = true;
+    hide();
+  };
+  overlay.querySelector('.intro-skip').addEventListener('click', skip);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && overlay.classList.contains('is-active')) skip();
+  });
   // Slow networks, missing assets, or unavailable WebGL must never hide the site indefinitely.
   timer = setTimeout(() => { done = true; controller.abort(); hide(); }, 5000);
   try {
@@ -27,6 +37,7 @@ async function startIntro() {
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = .95;
     overlay.appendChild(renderer.domElement);
+    renderer.domElement.setAttribute('aria-hidden', 'true');
     const scene = new THREE.Scene();
     const environment = new THREE.PMREMGenerator(renderer);
     const room = new RoomEnvironment();
@@ -172,6 +183,7 @@ async function startIntro() {
     }
     function play() {
       if (motion.matches || document.hidden) { hide(); return; }
+      previousFocus = document.activeElement;
       cancelAnimationFrame(frame);
       overlay.classList.remove('is-leaving');
       overlay.classList.add('is-active', 'is-running');
@@ -190,7 +202,7 @@ async function startIntro() {
     motion.addEventListener('change', () => { if (motion.matches) hide(); });
     document.addEventListener('visibilitychange', () => { if (document.hidden) hide(); });
     window.addEventListener('pagehide', () => { hide(); renderer.dispose(); envMap.dispose(); });
-    play();
+    if (!skipped) play();
   } catch (error) {
     clearTimeout(timer);
     hide();
